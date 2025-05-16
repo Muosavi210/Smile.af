@@ -1,0 +1,517 @@
+<!DOCTYPE html><html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smile - لبخند</title>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }body {
+        font-family: 'Vazirmatn', sans-serif;
+        background: linear-gradient(to right, #ffecd2, #fcb69f);
+        color: #333;
+        direction: rtl;
+    }
+
+    header {
+        background-color: #fff;
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 32px;
+        font-weight: bold;
+        color: #f57c00;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        margin: 10px;
+        text-decoration: none;
+        color: #555;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    nav a:hover {
+        color: #f57c00;
+    }
+
+    .hero {
+        text-align: center;
+        padding: 80px 20px;
+        background: linear-gradient(to left, #fff3e0, #ffe0b2);
+    }
+
+    .hero h1 {
+        font-size: 60px;
+        color: #e65100;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .hero p {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    .hero .btn {
+        margin-top: 30px;
+        padding: 15px 30px;
+        background-color: #f57c00;
+        color: white;
+        font-size: 18px;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .hero .btn:hover {
+        background-color: #e65100;
+    }
+
+    .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 60px 20px;
+        background-color: #fff8e1;
+        text-align: center;
+    }
+
+    .feature-box {
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .feature-box h3 {
+        margin-bottom: 10px;
+        color: #d84315;
+    }
+
+    .contact, .form-section, .blog-preview {
+        background-color: #ffe0b2;
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .contact h2, .form-section h2, .blog-preview h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        color: #bf360c;
+    }
+
+    .contact p, .blog-preview p {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .form-section form {
+        max-width: 500px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .form-section input, .form-section textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+
+    .form-section button {
+        background-color: #f57c00;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .blog-preview {
+        background: #fffde7;
+    }
+
+    .blog-preview ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .blog-preview li {
+        padding: 10px;
+        margin: 10px auto;
+        background-color: #fff;
+        border-radius: 8px;
+        max-width: 600px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    footer {
+        background-color: #fbe9e7;
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+        color: #333;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+        .hero h1 {
+            font-size: 40px;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+</style>
+
+</head>
+<body><header>
+    <div class="logo">Smile - لبخند</div>
+    <nav>
+        <a href="#">خانه</a>
+        <a href="#features">ویژگی‌ها</a>
+        <a href="#form">فرم تماس</a>
+        <a href="#blog">وبلاگ</a>
+        <a href="#contact">تماس با ما</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>:)</h1>
+    <p>با لبخند وارد شوید، زندگی زیباتر می‌شود</p>
+    <button class="btn">شروع کن</button>
+</section>
+
+<section class="features" id="features">
+    <div class="feature-box">
+        <h3>طراحی واکنش‌گرا</h3>
+        <p>سازگار با تمام دستگاه‌ها از جمله موبایل، تبلت و دسکتاپ.</p>
+    </div>
+    <div class="feature-box">
+        <h3>کد نویسی تمیز</h3>
+        <p>ساخته شده با HTML و CSS مدرن برای سرعت و کارایی بالا.</p>
+    </div>
+    <div class="feature-box">
+        <h3>قابل توسعه</h3>
+        <p>آماده برای اضافه کردن امکانات پیشرفته مانند فروشگاه، فرم تماس و ...</p>
+    </div>
+</section>
+
+<section class="form-section" id="form">
+    <h2>فرم تماس با ما</h2>
+    <form>
+        <input type="text" placeholder="نام کامل شما" required>
+        <input type="email" placeholder="ایمیل شما" required>
+        <textarea rows="5" placeholder="پیام شما..." required></textarea>
+        <button type="submit">ارسال پیام</button>
+    </form>
+</section>
+
+<section class="blog-preview" id="blog">
+    <h2>آخرین مطالب وبلاگ</h2>
+    <ul>
+        <li><strong>5 راه برای داشتن لبخند همیشگی</strong> - مقاله کوتاه در مورد شادی</li>
+        <li><strong>چرا لبخند مهم است؟</strong> - تأثیرات مثبت روانی لبخند زدن</li>
+        <li><strong>چطور در مصاحبه شغلی لبخند بزنیم؟</strong> - راهکارهای موفقیت</li>
+    </ul>
+</section>
+
+<section class="contact" id="contact">
+    <h2>این وب‌سایت برای فروش می‌باشد</h2>
+    <p>جهت خرید با ما در ارتباط باشید:</p>
+    <p>شماره تماس: <strong>0093794364810</strong></p>
+    <p>ایمیل: <strong>muosavi210@gmail.com</strong></p>
+</section>
+
+<footer>
+    طراحی خاص و ویژه برای شما | Smile © 2025
+</footer>
+
+</body>
+</html><!DOCTYPE html><html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smile - لبخند</title>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }body {
+        font-family: 'Vazirmatn', sans-serif;
+        background: linear-gradient(to right, #ffecd2, #fcb69f);
+        color: #333;
+        direction: rtl;
+    }
+
+    header {
+        background-color: #fff;
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 32px;
+        font-weight: bold;
+        color: #f57c00;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        margin: 10px;
+        text-decoration: none;
+        color: #555;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    nav a:hover {
+        color: #f57c00;
+    }
+
+    .hero {
+        text-align: center;
+        padding: 80px 20px;
+        background: linear-gradient(to left, #fff3e0, #ffe0b2);
+    }
+
+    .hero h1 {
+        font-size: 60px;
+        color: #e65100;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .hero p {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    .hero .btn {
+        margin-top: 30px;
+        padding: 15px 30px;
+        background-color: #f57c00;
+        color: white;
+        font-size: 18px;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .hero .btn:hover {
+        background-color: #e65100;
+    }
+
+    .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 60px 20px;
+        background-color: #fff8e1;
+        text-align: center;
+    }
+
+    .feature-box {
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .feature-box h3 {
+        margin-bottom: 10px;
+        color: #d84315;
+    }
+
+    .contact, .form-section, .blog-preview {
+        background-color: #ffe0b2;
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .contact h2, .form-section h2, .blog-preview h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        color: #bf360c;
+    }
+
+    .contact p, .blog-preview p {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .form-section form {
+        max-width: 500px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .form-section input, .form-section textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+
+    .form-section button {
+        background-color: #f57c00;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .blog-preview {
+        background: #fffde7;
+    }
+
+    .blog-preview ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .blog-preview li {
+        padding: 10px;
+        margin: 10px auto;
+        background-color: #fff;
+        border-radius: 8px;
+        max-width: 600px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    footer {
+        background-color: #fbe9e7;
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+        color: #333;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+        .hero h1 {
+            font-size: 40px;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+</style>
+
+</head>
+<body><header>
+    <div class="logo">Smile - لبخند</div>
+    <nav>
+        <a href="#">خانه</a>
+        <a href="#features">ویژگی‌ها</a>
+        <a href="#form">فرم تماس</a>
+        <a href="#blog">وبلاگ</a>
+        <a href="#contact">تماس با ما</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>:)</h1>
+    <p>با لبخند وارد شوید، زندگی زیباتر می‌شود</p>
+    <button class="btn">شروع کن</button>
+</section>
+
+<section class="features" id="features">
+    <div class="feature-box">
+        <h3>طراحی واکنش‌گرا</h3>
+        <p>سازگار با تمام دستگاه‌ها از جمله موبایل، تبلت و دسکتاپ.</p>
+    </div>
+    <div class="feature-box">
+        <h3>کد نویسی تمیز</h3>
+        <p>ساخته شده با HTML و CSS مدرن برای سرعت و کارایی بالا.</p>
+    </div>
+    <div class="feature-box">
+        <h3>قابل توسعه</h3>
+        <p>آماده برای اضافه کردن امکانات پیشرفته مانند فروشگاه، فرم تماس و ...</p>
+    </div>
+</section>
+
+<section class="form-section" id="form">
+    <h2>فرم تماس با ما</h2>
+    <form>
+        <input type="text" placeholder="نام کامل شما" required>
+        <input type="email" placeholder="ایمیل شما" required>
+        <textarea rows="5" placeholder="پیام شما..." required></textarea>
+        <button type="submit">ارسال پیام</button>
+    </form>
+</section>
+
+<section class="blog-preview" id="blog">
+    <h2>آخرین مطالب وبلاگ</h2>
+    <ul>
+        <li><strong>5 راه برای داشتن لبخند همیشگی</strong> - مقاله کوتاه در مورد شادی</li>
+        <li><strong>چرا لبخند مهم است؟</strong> - تأثیرات مثبت روانی لبخند زدن</li>
+        <li><strong>چطور در مصاحبه شغلی لبخند بزنیم؟</strong> - راهکارهای موفقیت</li>
+    </ul>
+</section>
+
+<section class="contact" id="contact">
+    <h2>این وب‌سایت برای فروش می‌باشد</h2>
+    <p>جهت خرید با ما در ارتباط باشید:</p>
+    <p>شماره تماس: <strong>0093794364810</strong></p>
+    <p>ایمیل: <strong>muosavi210@gmail.com</strong></p>
+</section>
+
+<footer>
+    طراحی خاص و ویژه برای شما | Smile © 2025
+</footer>
+
+</body>
+</html>
